@@ -2,8 +2,9 @@ INSTRUCCIONES - Intentos de suicidio notificados en Medellín: diferencias terri
 Equipo: Cupo 33 · Hackathon de Datos ITM 2026
 
 1. QUÉ ES
-   Notebook de Python que analiza los intentos de suicidio notificados en Medellín por año y comuna,
-   calcula tasas por 100.000 habitantes y prioriza las comunas donde empezar la prevención.
+   Notebook de Python que analiza los intentos de suicidio notificados en Medellín (2014–2022) por año y comuna.
+   Hallazgo: la tasa subió de 88,8 a 103,6 por 100.000 hab. (2018–2022), 72 % son jóvenes de 10 a 29 años y se prioriza
+   La Candelaria, Buenos Aires, Robledo, Manrique y Aranjuez para seguimiento después del primer intento.
 
 2. PROBARLO EN LÍNEA
    No aplica
@@ -12,12 +13,12 @@ Equipo: Cupo 33 · Hackathon de Datos ITM 2026
    Requisitos: Google Colab, o Python 3 (probado con 3.13) con Jupyter. Conexión a internet: los datos se descargan solos.
 
    Opción A - Google Colab:
-     1. Abrir https://colab.research.google.com > Archivo > Subir cuaderno > NOMBRE.ipynb
+     1. Abrir https://colab.research.google.com > Archivo > Subir cuaderno > analisis_preventivo_de_salud_mental_en_medellin.ipynb
      2. Entorno de ejecución > Ejecutar todas
 
    Opción B - Equipo local:
      1. pip install pandas numpy matplotlib seaborn scikit-learn scipy openpyxl folium
-     2. jupyter notebook NOMBRE.ipynb
+     2. jupyter notebook analisis_preventivo_de_salud_mental_en_medellin.ipynb
      3. Run > Run All Cells
 
    Las celdas deben ejecutarse en orden, de arriba hacia abajo: las secciones 9 a 14 usan variables de las anteriores.
