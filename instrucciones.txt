@@ -1,0 +1,48 @@
+INSTRUCCIONES - Intentos de suicidio notificados en Medellín: diferencias territoriales y temporales
+Equipo: Cupo 33 · Hackathon de Datos ITM 2026
+
+1. QUÉ ES
+   Notebook de Python que analiza los intentos de suicidio notificados en Medellín por año y comuna,
+   calcula tasas por 100.000 habitantes y prioriza las comunas donde empezar la prevención.
+
+2. PROBARLO EN LÍNEA
+   No aplica
+
+3. EJECUTARLO
+   Requisitos: Google Colab, o Python 3 (probado con 3.13) con Jupyter. Conexión a internet: los datos se descargan solos.
+
+   Opción A - Google Colab:
+     1. Abrir https://colab.research.google.com > Archivo > Subir cuaderno > NOMBRE.ipynb
+     2. Entorno de ejecución > Ejecutar todas
+
+   Opción B - Equipo local:
+     1. pip install pandas numpy matplotlib seaborn scikit-learn scipy openpyxl folium
+     2. jupyter notebook NOMBRE.ipynb
+     3. Run > Run All Cells
+
+   Las celdas deben ejecutarse en orden, de arriba hacia abajo: las secciones 9 a 14 usan variables de las anteriores.
+   Si un servidor no responde, el notebook reintenta la descarga. Si el error persiste, descargar los archivos desde los enlaces de la sección 5 y copiarlos en la carpeta del notebook.
+
+4. QUÉ DEBE VER EL JURADO
+   Sección 1: "cargado: sivigila (18724, 130)" y las demás bases cargadas sin errores.
+   Sección 7: matriz de priorización con "Prioridad alta: La Candelaria, Buenos Aires, Robledo, Manrique, Aranjuez".
+   Sección 9: proyección 2026 de 2866 intentos (rango 2082–3651).
+   En la carpeta: mapa_factor_economico.html, mapa_factor_consumo.html y mapa_tasa_intentos.html (abren en el navegador).
+
+5. DATOS Y FUENTES
+   sivigila_intsuicidio.csv · Intento de suicidio (SIVIGILA) · https://medata.app.medellin.gov.co/dataset/1-026-22-000146 · CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)
+   defunciones.csv · Mortalidad · https://medata.app.medellin.gov.co/dataset/1-026-22-000161 · CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)
+   afectados_alertas_recibidas_satmed.csv · Alertas recibidas SALVAVIDAS · https://medata.app.medellin.gov.co/node/16832 · CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)
+   factores_riesgos_identificados_satmed.csv · Factores de riesgo SALVAVIDAS · https://medata.app.medellin.gov.co/node/16832 · CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)
+   alertas_asociadas_factores_riesgos_identificados_satmed.csv · Alertas asociadas a factores SALVAVIDAS · https://medata.app.medellin.gov.co/node/16832 · CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/deed.es)
+   1.-Proyecciones-Medellin-por-Comunas-y-Corregimientos-2018-2030-Actualizado.xlsx · Proyecciones de población por comuna 2018–2030 (DAP/DANE) · https://www.medellin.gov.co/es/centro-documental/proyecciones-poblacion-viviendas-y-hogares/ · Sin licencia abierta declarada; © Distrito de Medellín (datos DANE), uso no comercial citando la fuente
+   comunas_medellin.geojson · Límites de comunas (Alcaldía de Medellín) · https://www.medellin.gov.co/servidormapas/rest/services/ccio_ind_turism/VA_Establecimiento_Comercial/MapServer/5 · Sin licencia abierta declarada; © Distrito de Medellín, uso no comercial citando la fuente
+
+   Los archivos sin licencia abierta (Excel de proyecciones y GeoJSON) no se incluyen en la entrega:
+   el notebook los descarga directamente desde el portal de la Alcaldía al ejecutarse.
+
+6. USO DE IA
+   Claude (Anthropic): depuración de código y apoyo en la generación de los mapas interactivos.
+
+7. CONTACTO
+   Carlos Mario Nieto Duque · carlosnieto1114161@correo.itm.edu.co
